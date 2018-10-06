@@ -1,4 +1,4 @@
-const image = require('gulp-image');
+const imagemin = require('gulp-imagemin');
 const svgstore = require('gulp-svgstore');
 
 module.exports = function () {
@@ -6,7 +6,7 @@ module.exports = function () {
   const gulp = this.gulp;
 
   return gulp.src(files.svg.source)
-      .pipe(image({quiet: true}))
-      .pipe(svgstore())
-      .pipe(gulp.dest(files.svg.destination));
+             .pipe(imagemin())
+             .pipe(svgstore())
+             .pipe(gulp.dest(files.svg.destination));
 };

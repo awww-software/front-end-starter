@@ -1,11 +1,12 @@
-const image = require('gulp-image');
-const util = require('gulp-util');
+const imagemin = require('gulp-imagemin');
+const newer = require('gulp-newer');
 
 module.exports = function () {
-  const {files, production} = this.context;
+  const {files} = this.context;
   const gulp = this.gulp;
 
   return gulp.src(files.images.source)
-             .pipe(production ? image({quiet: true}) : util.noop())
+             .pipe(newer(files.images.destination))
+             .pipe(imagemin())
              .pipe(gulp.dest(files.images.destination));
 };
