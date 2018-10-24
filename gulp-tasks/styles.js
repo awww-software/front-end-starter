@@ -1,6 +1,5 @@
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
-const plumber = require('gulp-plumber');
 const autoprefixer = require('autoprefixer');
 const sass = require('@csstools/postcss-sass');
 const postcss = require('gulp-postcss');
@@ -20,7 +19,6 @@ module.exports = function () {
   };
 
   return gulp.src(files.styles.source)
-             .pipe(plumber({errorHandler: err => console.log(err)}))
              .pipe(!production ? sourcemaps.init() : util.noop())
              .pipe(postcss([sass(sassConfig), autoprefixer(autoprefixerConfig), cssnano()]))
              .pipe(rename('bundle.css'))

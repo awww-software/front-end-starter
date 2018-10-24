@@ -1,4 +1,3 @@
-const plumber = require('gulp-plumber');
 const webpackSteam = require('webpack-stream');
 const webpack = require('webpack');
 
@@ -32,7 +31,6 @@ module.exports = function () {
   };
 
   return gulp.src(files.scripts.source)
-             .pipe(plumber({errorHandler: err => console.log(err)}))
              .pipe(webpackSteam(webpackConfig))
              .pipe(gulp.dest(files.scripts.destination));
 };

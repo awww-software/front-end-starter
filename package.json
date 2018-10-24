@@ -24,7 +24,6 @@
         "gulp-imagemin": "^4.1.0",
         "gulp-load-all-tasks": "^0.2.0",
         "gulp-newer": "^1.4.0",
-        "gulp-plumber": "^1.2.0",
         "gulp-postcss": "^8.0.0",
         "gulp-rename": "^1.4.0",
         "gulp-sourcemaps": "^2.6.4",
