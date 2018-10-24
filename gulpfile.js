@@ -8,7 +8,7 @@ const dirs = {
 
 const files = {
   html: {
-    source: `${dirs.source}/views/*.html`,
+    source: `${dirs.source}/views/*.twig`,
     watch: `${dirs.source}/views/**/*`,
     destination: `${dirs.build}/`
   },

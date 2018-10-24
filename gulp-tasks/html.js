@@ -1,10 +1,10 @@
-const ejs = require("gulp-ejs");
+const twig = require("gulp-twig");
 
 module.exports = function () {
   const {files} = this.context;
   const gulp = this.gulp;
 
   return gulp.src(files.html.source)
-             .pipe(ejs())
+             .pipe(twig())
              .pipe(gulp.dest(files.html.destination));
 };
