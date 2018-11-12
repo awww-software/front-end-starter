@@ -2,10 +2,10 @@
     "name": "front-end-starter",
     "version": "1.0.0",
     "scripts": {
-        "dev": "gulp start",
+        "start": "gulp start",
         "build": "gulp build",
-        "prod": "gulp start --production",
-        "deploy": "gulp build --production",
+        "start-prod": "gulp start --production",
+        "build-prod": "gulp build --production",
         "postinstall": "gulp build"
     },
     "devDependencies": {
