@@ -2,11 +2,11 @@ const webpackSteam = require('webpack-stream');
 const webpack = require('webpack');
 
 module.exports = function () {
-  const {files, production} = this.context;
+  const { files, production } = this.context;
   const gulp = this.gulp;
 
   const webpackConfig = {
-    output: {filename: 'bundle.js'},
+    output: { filename: 'bundle.js' },
     devtool: production ? '' : 'source-map',
     mode: production ? 'production' : 'development',
     stats: 'errors-only',
@@ -15,7 +15,7 @@ module.exports = function () {
         test: /\.js$/, exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: {presets: ['@babel/preset-env']}
+          options: { presets: ['@babel/preset-env'] }
         }
       }, {
         test: /\.css$/,

@@ -7,7 +7,7 @@ const cssnano = require('cssnano');
 const util = require('gulp-util');
 
 module.exports = function () {
-  const {files, production} = this.context;
+  const { files, production } = this.context;
   const gulp = this.gulp;
 
   const autoprefixerConfig = {
