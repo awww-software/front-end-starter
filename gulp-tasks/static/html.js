@@ -1,4 +1,4 @@
-const twig = require("gulp-twig");
+const twig = require('gulp-twig');
 
 module.exports = function () {
   const { files } = this.context;

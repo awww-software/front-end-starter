@@ -1,43 +1,43 @@
 const util = require('gulp-util');
 
-const dirs = {
+const DIRS = {
   source: `./source`,
   public: `./public`,
   build: `./build`,
 };
 
-const files = {
+const FILES = {
   html: {
-    source: `${dirs.source}/views/*.twig`,
-    watch: `${dirs.source}/views/**/*`,
-    destination: `${dirs.build}/`
+    source: `${DIRS.source}/views/*.twig`,
+    watch: `${DIRS.source}/views/**/*`,
+    destination: `${DIRS.build}/`
   },
   images: {
-    source: `${dirs.public}/images/**/*`,
-    destination: `${dirs.build}/assets/images/`,
+    source: `${DIRS.public}/images/**/*`,
+    destination: `${DIRS.build}/assets/images/`,
   },
   svg: {
-    source: `${dirs.public}/svg/**/*`,
-    destination: `${dirs.build}/assets/images/`,
+    source: `${DIRS.public}/svg/**/*`,
+    destination: `${DIRS.build}/assets/images/`,
   },
   styles: {
-    source: `${dirs.source}/styles/styles.scss`,
-    watch: `${dirs.source}/styles/**/*`,
-    destination: `${dirs.build}/assets/styles/`,
+    source: `${DIRS.source}/styles/styles.scss`,
+    watch: `${DIRS.source}/styles/**/*`,
+    destination: `${DIRS.build}/assets/styles/`,
   },
   scripts: {
-    source: `${dirs.source}/scripts/index.js`,
-    watch: `${dirs.source}/scripts/**/*`,
-    destination: `${dirs.build}/assets/scripts/`,
+    source: `${DIRS.source}/scripts/index.js`,
+    watch: `${DIRS.source}/scripts/**/*`,
+    destination: `${DIRS.build}/assets/scripts/`,
   },
   copy: {
-    source: [`${dirs.public}/**/*`, `!${dirs.public}/images/**/*`, `!${dirs.public}/svg/**/*`],
-    destination: `${dirs.build}/assets/`,
+    source: [`${DIRS.public}/**/*`, `!${DIRS.public}/images/**/*`, `!${DIRS.public}/svg/**/*`],
+    destination: `${DIRS.build}/assets/`,
   }
 };
 
 require('gulp-load-all-tasks')({
-  dirs,
-  files,
+  dirs: DIRS,
+  files: FILES,
   production: !!util.env.production
 });
