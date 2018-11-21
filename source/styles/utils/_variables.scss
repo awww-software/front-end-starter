@@ -7,3 +7,13 @@ $breakpoints: (
 );
 
 $z-index: ();
+
+$font-base: system-ui;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-text: $color-black;
+$color-bg: $color-white;
+$color-reversed-bg: $color-text;
+$color-reversed-text: $color-bg;

@@ -5,3 +5,11 @@
         box-sizing: border-box;
     }
 }
+
+body {
+    position: relative;
+    background: $color-bg;
+    font-family: $font-base;
+    color: $color-text;
+    line-height: normal;
+}
