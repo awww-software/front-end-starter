@@ -1,0 +1,15 @@
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+
+    @return $map;
+}
+
+@function breakpoint($key) {
+    @return map-get($breakpoints, $key) * 1px;
+}
+
+@function z-index($key) {
+    @return map-get($z-index, $key);
+}

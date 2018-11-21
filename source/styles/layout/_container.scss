@@ -1,0 +1,23 @@
+$container-max-width: breakpoint(xl);
+
+$container-horizontal-paddings: (
+    xs: 20px,
+);
+
+$container-fluid-horizontal-paddings: (
+    xs: 20px,
+    xl: 100px,
+);
+
+.container {
+    width: 100%;
+    max-width: $container-max-width;
+    margin-right: auto;
+    margin-left: auto;
+    @include each-breakpoint($container-horizontal-paddings, (padding-left, padding-right));
+
+    &--fluid {
+        max-width: none;
+        @include each-breakpoint($container-fluid-horizontal-paddings, (padding-left, padding-right));
+    }
+}

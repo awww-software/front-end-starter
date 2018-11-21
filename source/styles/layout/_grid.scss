@@ -1,0 +1,61 @@
+$grid-columns: 12;
+
+$grid-column-gutters: (
+    xs: 10px,
+);
+
+$grid-row-gutters: (
+    xs: 10px,
+);
+
+.grid {
+    $root: &;
+    display: flex;
+    flex-wrap: wrap;
+    @include each-breakpoint($grid-column-gutters, (margin-left, margin-right), 'multiply', -1);
+    @include each-breakpoint($grid-row-gutters, (margin-top, margin-bottom), 'multiply', -1);
+
+    &--tight-vertical {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        #{$root}__col {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &--tight-horizontal {
+        margin-left: 0;
+        margin-right: 0;
+
+        #{$root}__col {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__col {
+        position: relative;
+        width: 100%;
+        @include each-breakpoint($grid-column-gutters, (padding-left, padding-right));
+        @include each-breakpoint($grid-row-gutters, (padding-top, padding-bottom));
+
+        @each $breakpoint, $size in $breakpoints {
+            @include media($breakpoint) {
+                @for $i from 1 through $grid-columns {
+                    $percentage: percentage($i / $grid-columns);
+
+                    &--#{$breakpoint}-#{$i} {
+                        flex: 0 0 $percentage;
+                        max-width: $percentage;
+                    }
+
+                    &--#{$breakpoint}-off-#{$i} {
+                        margin-left: $percentage;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@mixin media($minWidth, $maxWidth: null) {
+    @if type-of($minWidth) != number {
+        $minWidth: breakpoint($minWidth);
+    }
+
+    @if ($maxWidth != null) {
+        @if type-of($maxWidth) != number {
+            $maxWidth: breakpoint($maxWidth);
+        }
+
+        @media (min-width: $minWidth) and (max-width: $maxWidth - 1px) {
+            @content;
+        }
+    } @else {
+        @if ($minWidth != 0) {
+            @media (min-width: $minWidth) {
+                @content;
+            }
+        } @else {
+            @content;
+        }
+    }
+}
+
+@mixin each-breakpoint($map, $properties, $operation: null, $operationValue: null) {
+    @each $bp, $value in $map {
+        $newValue: $value;
+
+        @if ($operation == 'multiply') {
+            $newValue: $value * $operationValue;
+        } @else if ($operation == 'divide') {
+            $newValue: $value / $operationValue;
+        } @else if ($operation == 'add') {
+            $newValue: $value + $operationValue;
+        } @else if ($operation == 'subtract') {
+            $newValue: $value - $operationValue;
+        }
+
+        @include media($bp) {
+            @each $property in $properties {
+                #{$property}: $newValue;
+            }
+        }
+    }
+}
