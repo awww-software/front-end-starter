@@ -10,17 +10,9 @@ module.exports = function () {
   const { files, production } = this.context;
   const gulp = this.gulp;
 
-  const autoprefixerConfig = {
-    browsers: ['last 2 versions']
-  };
-
-  const sassConfig = {
-    includePaths: ['node_modules/']
-  };
-
   return gulp.src(files.styles.source)
              .pipe(!production ? sourcemaps.init() : util.noop())
-             .pipe(postcss([sass(sassConfig), autoprefixer(autoprefixerConfig), cssnano()]))
+             .pipe(postcss([sass({ includePaths: ['node_modules/'] }), autoprefixer(), cssnano()]))
              .pipe(rename('bundle.css'))
              .pipe(!production ? sourcemaps.write('.') : util.noop())
              .pipe(gulp.dest(files.styles.destination));

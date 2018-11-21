@@ -13,13 +13,10 @@ module.exports = function () {
     module: {
       rules: [{
         test: /\.js$/, exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: { presets: ['@babel/preset-env'] }
-        }
+        use: ['babel-loader'],
       }, {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }]
     },
     plugins: [
