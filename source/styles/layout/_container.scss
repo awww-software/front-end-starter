@@ -1,12 +1,12 @@
 $container-max-width: breakpoint(xl);
 
 $container-horizontal-paddings: (
-    xs: 20px,
+    xs: $gutter * 2,
 );
 
 $container-fluid-horizontal-paddings: (
-    xs: 20px,
-    xl: 100px,
+    xs: $gutter * 2,
+    xl: $gutter * 10,
 );
 
 .container {

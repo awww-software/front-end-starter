@@ -6,10 +6,15 @@
     }
 }
 
+html {
+    @include each-breakpoint($font-sizes, font-size);
+}
+
 body {
     position: relative;
     background: $color-bg;
     font-family: $font-base;
+    font-size: 1em;
     color: $color-text;
     line-height: normal;
 }

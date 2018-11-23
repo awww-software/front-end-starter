@@ -1,11 +1,11 @@
 $grid-columns: 12;
 
 $grid-column-gutters: (
-    xs: 10px,
+    xs: $gutter,
 );
 
 $grid-row-gutters: (
-    xs: 10px,
+    xs: $gutter,
 );
 
 .grid {

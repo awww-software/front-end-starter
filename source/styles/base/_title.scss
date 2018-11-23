@@ -1,0 +1,17 @@
+.title {
+    display: block;
+
+    @each $breakpoint, $sizes in $title-sizes {
+        @include media($breakpoint) {
+            @for $i from 1 through length($sizes) {
+                $size: nth($sizes, $i);
+
+                @if $size != null {
+                    &--h#{$i} {
+                        font-size: $size;
+                    }
+                }
+            }
+        }
+    }
+}

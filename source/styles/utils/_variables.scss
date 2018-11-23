@@ -9,6 +9,18 @@ $breakpoints: (
 $z-index: ();
 
 $font-base: system-ui;
+$font-heading: $font-base;
+
+$font-sizes: (
+    xs: 14px,
+    md: 16px,
+);
+
+$title-sizes: (
+    xs: (28px, 24px, 20px),
+    md: (32px, 26px, 24px),
+    xl: (46px, 36px, 30px),
+);
 
 $color-white: #fff;
 $color-black: #000;
@@ -17,3 +29,6 @@ $color-text: $color-black;
 $color-bg: $color-white;
 $color-reversed-bg: $color-text;
 $color-reversed-text: $color-bg;
+
+$gutter: 10px;
+$transition-time: .3s;
