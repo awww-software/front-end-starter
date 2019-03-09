@@ -39,4 +39,4 @@ All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
 
 `start` run `build`, then `watch` and `serve`
 
-`watch` watch all files and run proper `static:*` tasks
+`watch` watch all files and run proper tasks
