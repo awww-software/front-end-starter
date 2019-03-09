@@ -6,7 +6,7 @@ module.exports = function (done) {
   const browsersyncConfig = {
     notify: false,
     server: { baseDir: dirs.build },
-    files: [`${dirs.build}/**/*`]
+    files: [`${dirs.build}/**/*`],
   };
 
   browserSync.init(browsersyncConfig, done);

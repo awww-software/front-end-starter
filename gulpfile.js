@@ -10,7 +10,7 @@ const FILES = {
   html: {
     source: `${DIRS.source}/views/*.twig`,
     watch: `${DIRS.source}/views/**/*`,
-    destination: `${DIRS.build}/`
+    destination: `${DIRS.build}/`,
   },
   images: {
     source: `${DIRS.public}/images/**/*`,
@@ -33,11 +33,11 @@ const FILES = {
   copy: {
     source: [`${DIRS.public}/**/*`, `!${DIRS.public}/images/**/*`, `!${DIRS.public}/svg/**/*`],
     destination: `${DIRS.build}/assets/`,
-  }
+  },
 };
 
 require('gulp-load-all-tasks')({
   dirs: DIRS,
   files: FILES,
-  production: !!util.env.production
+  production: !!util.env.production,
 });

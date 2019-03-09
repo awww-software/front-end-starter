@@ -16,15 +16,15 @@ module.exports = function () {
         use: ['babel-loader'],
       }, {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      }]
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      }],
     },
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
-        jQuery: 'jquery'
-      })
-    ]
+        jQuery: 'jquery',
+      }),
+    ],
   };
 
   return gulp.src(files.scripts.source)
