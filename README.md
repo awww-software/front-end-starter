@@ -1,4 +1,4 @@
-Front-End Starter
+# Front-End Starter
 
 ## Configuration
 
