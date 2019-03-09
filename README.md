@@ -25,7 +25,7 @@ All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
 
 `static:scripts` bundle scripts, generate `sourcemaps` and minify output with `webpack`
 
-`static:styles` compile `SCSS` files, run `auto-prefixer`, generate `sourcemaps` and minify output with `PostCSS`
+`static:styles` compile styles, run `auto-prefixer`, generate `sourcemaps` and minify output with `PostCSS`
 
 `static:svg` compress and combine `SVG` files into one `<symbol>` element
 
