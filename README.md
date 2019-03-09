@@ -1,4 +1,4 @@
-# AWWW Software - Front-End Starter
+Front-End Starter
 
 ## Configuration
 
