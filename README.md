@@ -3,6 +3,10 @@
 
 # Front-End Starter
 
+## Installation
+
+`npm install`
+
 ## Configuration
 
 All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
