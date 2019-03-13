@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "gulp start",
-    "build": "gulp build",
-    "start-prod": "gulp start --production",
-    "build-prod": "gulp build --production",
+    "build": "gulp build --production",
     "postinstall": "gulp build"
   },
   "devDependencies": {

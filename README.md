@@ -5,7 +5,11 @@
 
 ## Installation
 
-`npm install`
+```
+git clone https://github.com/dsyncerek/front-end-starter.git
+cd front-end-starter
+npm install
+```
 
 ## Configuration
 
@@ -17,9 +21,9 @@ All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
 
 `npm run build` build the project
 
-`npm run start-prod` start the production server
+## Deploy
 
-`npm run build-prod` build the project with production settings
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dsyncerek/front-end-starter)
 
 ## Gulp Tasks
 
@@ -44,3 +48,5 @@ All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
 `start` run `build`, then `watch` and `serve`
 
 `watch` watch all files and run proper tasks
+
+## [License](LICENSE)
