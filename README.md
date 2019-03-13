@@ -16,7 +16,7 @@ npm install
 
 All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
 
-## Development
+## Usage
 
 `npm run start` start the development server
 
