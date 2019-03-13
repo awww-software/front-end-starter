@@ -4,6 +4,7 @@
   "scripts": {
     "start": "gulp start",
     "build": "gulp build --production",
+    "lint": "gulp lint",
     "postinstall": "gulp build"
   },
   "devDependencies": {
@@ -16,26 +17,29 @@
     "browserslist": "^4.3.4",
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.7",
+    "eslint": "^5.15.1",
     "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-load-all-tasks": "^0.2.0",
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^8.0.0",
     "gulp-svgstore": "^7.0.0",
     "gulp-twig": "^1.2.0",
     "gulp-util": "^3.0.8",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.26.0",
-    "webpack-stream": "^5.1.1",
-    "gulp-htmlmin": "^5.0.1",
     "stylelint": "^9.5.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-scss": "^3.5.3"
+    "stylelint-scss": "^3.5.3",
+    "webpack": "^4.26.0",
+    "webpack-stream": "^5.1.1"
   },
   "dependencies": {
     "reset-css": "^4.0.1"

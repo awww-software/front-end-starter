@@ -21,6 +21,8 @@ All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
 
 `npm run build` build the project
 
+`npm run lint` lint the project with `eslint` and `stylelint`
+
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dsyncerek/front-end-starter)

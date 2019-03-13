@@ -12,7 +12,11 @@ module.exports = function () {
 
   return gulp.src(files.styles.source)
              .pipe(!production ? sourcemaps.init() : util.noop())
-             .pipe(postcss([sass({ includePaths: ['node_modules/'] }), autoprefixer(), cssnano()]))
+             .pipe(postcss([
+               sass({ includePaths: ['node_modules/'] }),
+               autoprefixer(),
+               cssnano(),
+             ]))
              .pipe(rename('bundle.css'))
              .pipe(!production ? sourcemaps.write('.') : util.noop())
              .pipe(gulp.dest(files.styles.destination));
