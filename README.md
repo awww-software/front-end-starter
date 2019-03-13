@@ -1,6 +1,6 @@
-![CircleCI branch](https://img.shields.io/circleci/project/github/dsyncerek/front-end-starter/master.svg)
-[![dependencies Status](https://david-dm.org/dsyncerek/front-end-starter/status.svg)](https://david-dm.org/dsyncerek/front-end-starter)
-[![devDependencies Status](https://david-dm.org/dsyncerek/front-end-starter/dev-status.svg)](https://david-dm.org/dsyncerek/front-end-starter?type=dev)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/dsyncerek/front-end-starter/master.svg)](https://circleci.com/gh/dsyncerek/front-end-starter)
+[![dependencies Status](https://img.shields.io/david/dsyncerek/front-end-starter.svg)](https://david-dm.org/dsyncerek/front-end-starter)
+[![devDependencies Status](https://img.shields.io/david/dev/dsyncerek/front-end-starter.svg)](https://david-dm.org/dsyncerek/front-end-starter?type=dev)
 
 # Front-End Starter
 
