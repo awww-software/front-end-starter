@@ -4,6 +4,14 @@
 
 # Front-End Starter
 
+## Features
+
+- BrowserSync with hot reloading
+- HTML with twig.js, minification
+- SCSS with auto-prefixer, sourcemaps, minification, [stylelint](https://stylelint.io/)
+- JavaScript with Webpack, Babel, sourcemaps, minification, [ESLint](https://eslint.org/)
+- [CircleCI](https://circleci.com/) and [Netlify](https://www.netlify.com/) support
+
 ## Installation
 
 ```
@@ -27,29 +35,5 @@ All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dsyncerek/front-end-starter)
-
-## Gulp Tasks
-
-`static:html` compile and minify `twig` templates
-
-`static:images` compress images
-
-`static:scripts` bundle scripts, generate `sourcemaps` and minify output with `webpack`
-
-`static:styles` compile styles, run `auto-prefixer`, generate `sourcemaps` and minify output with `PostCSS`
-
-`static:svg` compress and combine `SVG` files into one `<symbol>` element
-
-`build` run all `static:*` tasks
-
-`clean` clean the `DIRS.build` folder
-
-`copy` copy files from `FILES.copy.source` to `FILES.copy.destination`
-
-`serve` run `browser-sync` server in `DIRS.build`
-
-`start` run `build`, then `watch` and `serve`
-
-`watch` watch all files and run proper tasks
 
 ## [License](LICENSE)
