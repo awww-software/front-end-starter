@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/dsyncerek/front-end-starter.svg?style=svg)](https://circleci.com/gh/dsyncerek/front-end-starter)
+![CircleCI branch](https://img.shields.io/circleci/project/github/dsyncerek/front-end-starter/master.svg)
 [![dependencies Status](https://david-dm.org/dsyncerek/front-end-starter/status.svg)](https://david-dm.org/dsyncerek/front-end-starter)
 [![devDependencies Status](https://david-dm.org/dsyncerek/front-end-starter/dev-status.svg)](https://david-dm.org/dsyncerek/front-end-starter?type=dev)
 
