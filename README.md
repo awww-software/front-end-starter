@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/dsyncerek/front-end-starter.svg?style=svg)](https://circleci.com/gh/dsyncerek/front-end-starter)
 [![dependencies Status](https://david-dm.org/dsyncerek/front-end-starter/status.svg)](https://david-dm.org/dsyncerek/front-end-starter)
 [![devDependencies Status](https://david-dm.org/dsyncerek/front-end-starter/dev-status.svg)](https://david-dm.org/dsyncerek/front-end-starter?type=dev)
 
