@@ -6,10 +6,10 @@
 
 ## Features
 
-- BrowserSync with hot reloading
-- HTML with twig.js, minification
-- SCSS with auto-prefixer, sourcemaps, minification, [stylelint](https://stylelint.io/)
-- JavaScript with Webpack, Babel, sourcemaps, minification, [ESLint](https://eslint.org/)
+- [BrowserSync](https://www.browsersync.io/) with hot reloading
+- HTML with [twig.js](https://github.com/twigjs/twig.js), minification
+- SCSS with [auto-prefixer](https://github.com/postcss/autoprefixer), sourcemaps, minification, [stylelint](https://stylelint.io/)
+- JavaScript with [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/), sourcemaps, minification, [ESLint](https://eslint.org/)
 - [CircleCI](https://circleci.com/) and [Netlify](https://www.netlify.com/) support
 
 ## Installation
