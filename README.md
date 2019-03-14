@@ -30,7 +30,7 @@ All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
 
 `npm run build` build the project
 
-`npm run lint` lint the project with `eslint` and `stylelint`
+`npm run lint` lint the project
 
 ## Deploy
 
