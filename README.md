@@ -8,7 +8,7 @@
 
 - [BrowserSync](https://www.browsersync.io/) with hot reloading
 - HTML with [twig.js](https://github.com/twigjs/twig.js), minification
-- SCSS with [auto-prefixer](https://github.com/postcss/autoprefixer), sourcemaps, minification, [stylelint](https://stylelint.io/)
+- CSS with [SCSS](https://sass-lang.com/), [auto-prefixer](https://github.com/postcss/autoprefixer), sourcemaps, minification, [stylelint](https://stylelint.io/)
 - JavaScript with [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/), sourcemaps, minification, [ESLint](https://eslint.org/)
 - [CircleCI](https://circleci.com/) and [Netlify](https://www.netlify.com/) support
 
@@ -30,7 +30,7 @@ All paths can be changed in `gulpfile.js` file - variables `DIRS` and `FILES`.
 
 `npm run build` build the project
 
-`npm run lint` lint the project with `eslint` and `stylelint`
+`npm run lint` lint the project
 
 ## Deploy
 
