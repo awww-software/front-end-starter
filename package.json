@@ -4,8 +4,7 @@
   "scripts": {
     "start": "gulp start",
     "build": "gulp build --production",
-    "lint": "gulp lint",
-    "postinstall": "gulp build --production"
+    "lint": "gulp lint"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
