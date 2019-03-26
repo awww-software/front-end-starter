@@ -4,6 +4,8 @@
 
 # Front-End Starter
 
+> A [gulp](https://gulpjs.com/)-based template to kick-start fast and modern front-end projects.
+
 ## Features
 
 - [BrowserSync](https://www.browsersync.io/) with hot reloading
