@@ -11,6 +11,7 @@
 - CSS with [SCSS](https://sass-lang.com/), [auto-prefixer](https://github.com/postcss/autoprefixer), sourcemaps, minification, [stylelint](https://stylelint.io/)
 - JavaScript with [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/), sourcemaps, minification, [ESLint](https://eslint.org/)
 - Images minification
+- SVG combination into one symbol element, [read more](https://css-tricks.com/svg-symbol-good-choice-icons/)
 - [CircleCI](https://circleci.com/) and [Netlify](https://www.netlify.com/) support
 
 ## Installation
