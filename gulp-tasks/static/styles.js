@@ -6,18 +6,15 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const util = require('gulp-util');
 
-module.exports = function () {
+module.exports = function() {
   const { files, production } = this.context;
   const gulp = this.gulp;
 
-  return gulp.src(files.styles.source)
-             .pipe(!production ? sourcemaps.init() : util.noop())
-             .pipe(postcss([
-               sass({ includePaths: ['node_modules/'] }),
-               autoprefixer(),
-               cssnano(),
-             ]))
-             .pipe(rename('bundle.css'))
-             .pipe(!production ? sourcemaps.write('.') : util.noop())
-             .pipe(gulp.dest(files.styles.destination));
+  return gulp
+    .src(files.styles.source)
+    .pipe(!production ? sourcemaps.init() : util.noop())
+    .pipe(postcss([sass({ includePaths: ['node_modules/'] }), autoprefixer(), cssnano()]))
+    .pipe(rename('bundle.css'))
+    .pipe(!production ? sourcemaps.write('.') : util.noop())
+    .pipe(gulp.dest(files.styles.destination));
 };

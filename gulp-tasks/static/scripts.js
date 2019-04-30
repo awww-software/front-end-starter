@@ -1,7 +1,7 @@
 const webpackSteam = require('webpack-stream');
 const webpack = require('webpack');
 
-module.exports = function () {
+module.exports = function() {
   const { files, production } = this.context;
   const gulp = this.gulp;
 
@@ -11,14 +11,17 @@ module.exports = function () {
     mode: production ? 'production' : 'development',
     stats: 'errors-only',
     module: {
-      rules: [{
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ['babel-loader'],
-      }, {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      }],
+      rules: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: ['babel-loader'],
+        },
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader', 'sass-loader'],
+        },
+      ],
     },
     plugins: [
       new webpack.ProvidePlugin({
@@ -28,7 +31,8 @@ module.exports = function () {
     ],
   };
 
-  return gulp.src(files.scripts.source)
-             .pipe(webpackSteam(webpackConfig))
-             .pipe(gulp.dest(files.scripts.destination));
+  return gulp
+    .src(files.scripts.source)
+    .pipe(webpackSteam(webpackConfig))
+    .pipe(gulp.dest(files.scripts.destination));
 };

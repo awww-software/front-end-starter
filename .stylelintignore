@@ -1,2 +1,7 @@
+*
+!*/
+!*.scss
+
+.idea/
 node_modules/
 build/

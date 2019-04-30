@@ -1,6 +1,6 @@
 const browserSync = require('browser-sync').create();
 
-module.exports = function (done) {
+module.exports = function(done) {
   const { dirs } = this.context;
 
   const browsersyncConfig = {

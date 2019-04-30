@@ -1,4 +1,4 @@
-module.exports = function (done) {
+module.exports = function(done) {
   const { files } = this.context;
   const gulp = this.gulp;
 
