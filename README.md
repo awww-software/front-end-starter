@@ -4,12 +4,15 @@
 
 # Front-End Starter
 
+> A [gulp](https://gulpjs.com/)-based template to kick-start fast and modern front-end projects.
+
 ## Features
 
 - [BrowserSync](https://www.browsersync.io/) with hot reloading
 - HTML with [twig.js](https://github.com/twigjs/twig.js), minification
 - CSS with [SCSS](https://sass-lang.com/), [auto-prefixer](https://github.com/postcss/autoprefixer), sourcemaps, minification
 - JavaScript with [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/), sourcemaps, minification
+- SVG combination into one symbol element, [read more](https://css-tricks.com/svg-symbol-good-choice-icons/)
 - [ESLint](https://eslint.org/), [stylelint](https://stylelint.io/), [Prettier](https://prettier.io/) support
 - [CircleCI](https://circleci.com/) and [Netlify](https://www.netlify.com/) support
 
